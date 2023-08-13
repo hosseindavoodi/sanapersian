@@ -2,15 +2,12 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import clsx from "clsx";
 
 const navLinks = [
   {
-    href: "/",
-    name: "Home page",
-  },
-  {
     href: "/pages/news",
-    name: "News",
+    name: "NEWS",
   },
   {
     href: "/pages/faq",
@@ -18,11 +15,15 @@ const navLinks = [
   },
   {
     href: "pages/about-us",
-    name: "About US",
+    name: "ABOUT US",
   },
   {
     href: "pages/contact-us",
-    name: "Contact US",
+    name: "CONTACT US",
+  },
+  {
+    href: "pages/contact-us",
+    name: "TRAVELL ITINERY",
   },
 ];
 
@@ -36,7 +37,10 @@ export default function NavBar() {
 
         return (
           <Link
-            className={isActive ? "text-redPrimary" : "text-black"}
+            className={clsx(
+              "lg:mr-10 md:mr-8 font-semibold text-base hover:text-redPrimary",
+              isActive ? "text-redPrimary" : "text-black"
+            )}
             href={link.href}
             key={link.name}
           >

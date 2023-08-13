@@ -2,12 +2,13 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "./components/Header/Header";
+import Container from "./components/Container";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Sanapersian",
-  description: "test for now",
+  description: "Travel Agency",
 };
 
 export default function RootLayout({
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        {children}
+        <Container WrapperClassName="mt-8">{children}</Container>
       </body>
     </html>
   );
