@@ -14,16 +14,16 @@ export default function Header() {
   return (
     <div>
       <Container
-        WrapperClassName="bg-redPrimary text-white font-semibold h-[27px]"
+        wrapperClassName="bg-redPrimary text-white font-semibold h-[27px]"
         className=""
       >
         FA
       </Container>
       <Container
-        WrapperClassName="min-h-[80px] py-2 shadow-md"
+        wrapperClassName="min-h-[80px] py-2 shadow-md"
         className="flex justify-between"
       >
-        <div className="mt-5 sm:flex sm:flex-col sm:bg-white  sm:gap-3">
+        <div className="mt-5 sm:flex sm:flex-col sm:bg-white sm:gap-3">
           {device === "mobile" && (
             <>
               <Image
@@ -39,7 +39,7 @@ export default function Header() {
           )}
           {device != "mobile" && <NavBar />}
         </div>
-        <div>
+        <div className="xs:absolute xs:right-2">
           <Link href="/">
             <Image
               className="sm:w-[150px] sm:h-[41] sm:mt-2"

@@ -2,17 +2,17 @@ import clsx from "clsx";
 
 interface containerProps {
   children: React.ReactNode;
-  WrapperClassName?: string;
+  wrapperClassName?: string;
   className?: string;
 }
 
 export default function Container({
   children,
-  WrapperClassName,
+  wrapperClassName,
   className,
 }: containerProps) {
   return (
-    <div className={WrapperClassName}>
+    <div className={wrapperClassName}>
       <div className={clsx("max-w-[1200px] m-auto md:px-2 sm:px-2", className)}>
         {children}
       </div>
