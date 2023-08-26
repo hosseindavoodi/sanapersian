@@ -1,3 +1,9 @@
+import MapIran from "./components/Map/MapIran";
+
 export default function App() {
-  return <>home page</>;
+  return (
+    <div className="w-[798px] m-auto">
+      <MapIran />
+    </div>
+  );
 }

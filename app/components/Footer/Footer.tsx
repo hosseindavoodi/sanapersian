@@ -3,7 +3,7 @@ import Container from "../Container";
 export default function Footer() {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black border-t-4 border-redPrimary">
         <Container wrapperClassName="py-8" className="text-white">
           footer
         </Container>

@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <Container wrapperClassName="my-8">{children}</Container>
+        <Container wrapperClassName="py-8 bg-[url('/MainPageBack1.jpg')]">
+          {children}
+        </Container>
         <Footer />
       </body>
     </html>
