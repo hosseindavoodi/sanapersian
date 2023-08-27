@@ -3,9 +3,8 @@ import RenderPaths from "./RenderPaths";
 export default function MapIran() {
   return (
     <svg
-      width="798"
-      height="711"
-      className="max-w-full"
+      width="100%"
+      height="100%"
       viewBox="0 0 798 711"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
