@@ -28,7 +28,9 @@ export default function Header() {
             <>
               <Image
                 className="mb-[30px]"
-                src="/mobileMenu.svg"
+                src={
+                  openMobileMenu ? "/mobileMenuClose.svg" : "/mobileMenu.svg"
+                }
                 alt=""
                 width={30}
                 height={24}
